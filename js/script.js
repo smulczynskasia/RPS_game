@@ -55,6 +55,7 @@ displayResult(playerMove, computerMove);
 }
 }
 buttonTest = document.getElementById('button-test');
+buttonTest.addEventListener('click', function(){buttonClicked('Test button'); });
 buttonRock = document.getElementById('rock');
 buttonRock.addEventListener('click', function(){ buttonClicked('kamień'); });
 buttonPaper = document.getElementById('paper');
