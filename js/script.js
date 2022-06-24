@@ -1,12 +1,12 @@
-var argButtonName, buttonTest;
+var buttonPaper, buttonRock, buttonScissors, buttonTest;
 
 /**
  * Describe this function...
  */
-function buttonClicked(argButtonName) {
+function buttonClicked(buttonRock) {
   clearMessages();
-  console.log(argButtonName + ' został kliknięty');
-  var argComputerMove, argMoveId, argPlayerMove, computerMove, playerInput, playerMove, randomNumber;
+  console.log(buttonRock + ' został kliknięty');
+   var argComputerMove, argMoveId, argPlayerMove, computerMove, playerInput, playerMove, randomNumber;
 
 /**
  * Describe this function...
@@ -53,12 +53,13 @@ console.log('ruch komputera to: ' + computerMove);
 displayResult(playerMove, computerMove);
 
 }
+}
 buttonTest = document.getElementById('button-test');
 buttonTest.addEventListener('click', function(){ buttonClicked('Guzik TEST'); });
-argButtonName = document.getElementById('button-rock');
-argButtonName.addEventListener('click', function(){ buttonClicked('kamień'); });
-argButtonName = document.getElementById('button-paper');
-argButtonName.addEventListener('click', function(){ buttonClicked('papier'); });
-argButtonName = document.getElementById('button-scissors');
-argButtonName.addEventListener('click', function(){ buttonClicked('nożyce'); });
-
+buttonRock = document.getElementById('rock');
+buttonRock.addEventListener('click', function(){ buttonClicked('Kamień'); });
+buttonPaper = document.getElementById('paper');
+buttonPaper.addEventListener('click', function(){ buttonClicked('Papier'); });
+buttonScissors = document.getElementById('scissors');
+buttonScissors.addEventListener('click', function(){ buttonClicked('Nożyce'); });
+ 
