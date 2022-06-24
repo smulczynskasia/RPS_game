@@ -55,7 +55,6 @@ displayResult(playerMove, computerMove);
 }
 }
 buttonTest = document.getElementById('button-test');
-buttonTest.addEventListener('click', function(){ buttonClicked('Guzik TEST'); });
 buttonRock = document.getElementById('rock');
 buttonRock.addEventListener('click', function(){ buttonClicked('kamień'); });
 buttonPaper = document.getElementById('paper');
