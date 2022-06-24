@@ -23,7 +23,7 @@ function getMoveName(argMoveId) {
     printMessage('Nie znam ruchu o id ' + argMoveId + '. Zakładam, że chodziło o "kamień".');
     return 'kamień';
   }
-}
+
 
 /**
  * Describe this function...
