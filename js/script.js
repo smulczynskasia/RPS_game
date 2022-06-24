@@ -57,9 +57,9 @@ displayResult(playerMove, computerMove);
 buttonTest = document.getElementById('button-test');
 buttonTest.addEventListener('click', function(){ buttonClicked('Guzik TEST'); });
 buttonRock = document.getElementById('rock');
-buttonRock.addEventListener('click', function(){ buttonClicked('Kamień'); });
+buttonRock.addEventListener('click', function(){ buttonClicked('kamień'); });
 buttonPaper = document.getElementById('paper');
-buttonPaper.addEventListener('click', function(){ buttonClicked('Papier'); });
+buttonPaper.addEventListener('click', function(){ buttonClicked('papier'); });
 buttonScissors = document.getElementById('scissors');
-buttonScissors.addEventListener('click', function(){ buttonClicked('Nożyce'); });
+buttonScissors.addEventListener('click', function(){ buttonClicked('nożyce'); });
  
