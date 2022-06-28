@@ -14,7 +14,7 @@ function buttonClicked(argButtonName) {
   console.log(argButtonName + ' został kliknięty');
 
 var argComputerMove, argMoveId, argPlayerMove, computerMove, playerInput, playerMove, randomNumber;
-
+  
 /**
  * Describe this function...
  */
@@ -31,7 +31,7 @@ function getMoveName(argMoveId) {
     return 'kamień';
   }
 }
-
+  
 /**
  * Describe this function...
  */
@@ -51,7 +51,8 @@ function displayResult(argPlayerMove, argComputerMove) {
   }
 }
 
-playerMove = argButtonName;
+
+let playerMove = argButtonName;
 randomNumber = Math.floor(Math.random() * 3 + 1);
 console.log('wylosowana liczba to: ' + randomNumber);
 computerMove = getMoveName(randomNumber);
