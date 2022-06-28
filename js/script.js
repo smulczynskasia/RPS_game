@@ -1,4 +1,4 @@
-var argButtonName
+let argButtonName
 
 const buttonRock = document.getElementById('button-rock');
 
