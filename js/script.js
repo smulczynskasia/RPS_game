@@ -1,10 +1,10 @@
-var argButtonName, buttonPaper, buttonRock, buttonScissors;
+var argButtonName;
 
-buttonRock = document.getElementById('button-rock');
+const buttonRock = document.getElementById('button-rock');
 
-buttonPaper = document.getElementById('button-paper');
+const buttonPaper = document.getElementById('button-paper');
 
-buttonScissors = document.getElementById('button-scissors');
+const buttonScissors = document.getElementById('button-scissors');
 
 /**
  * Describe this function...
