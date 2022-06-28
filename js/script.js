@@ -13,7 +13,7 @@ function buttonClicked(argButtonName) {
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
 
-var argComputerMove, argMoveId, argPlayerMove, computerMove, playerInput, randomNumber;
+var argComputerMove, argMoveId, argPlayerMove;
   
 /**
  * Describe this function...
@@ -53,11 +53,14 @@ function displayResult(argPlayerMove, argComputerMove) {
 
 
 let playerMove = argButtonName;
-randomNumber = Math.floor(Math.random() * 3 + 1);
+
+let randomNumber = Math.floor(Math.random() * 3 + 1);
 console.log('wylosowana liczba to: ' + randomNumber);
-computerMove = getMoveName(randomNumber);
+  
+let computerMove = getMoveName(randomNumber);
 console.log('ruch komputera to: ' + computerMove);
-displayResult(playerMove, computerMove);
+  
+let displayResult(playerMove, computerMove);
 
 }
 buttonRock.addEventListener('click', function(){ buttonClicked('kamień') });
