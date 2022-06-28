@@ -13,8 +13,10 @@ function buttonClicked(argButtonName) {
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
 
-var argComputerMove, argMoveId, argPlayerMove, computerMove, playerInput, playerMove, randomNumber;
+var argComputerMove, argMoveId, argPlayerMove, playerInput, playerMove, randomNumber;
 
+let computerMove
+  
 /**
  * Describe this function...
  */
