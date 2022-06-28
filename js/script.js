@@ -1,10 +1,12 @@
-let argButtonName
+
 
 const buttonRock = document.getElementById('button-rock');
 
 const buttonPaper = document.getElementById('button-paper');
 
 const buttonScissors = document.getElementById('button-scissors');
+
+let argButtonName
 
 /**
  * Describe this function...
@@ -14,13 +16,8 @@ function buttonClicked(argButtonName) {
   console.log(argButtonName + ' został kliknięty');
 
 var argComputerMove, argMoveId, argPlayerMove;
-let computerMove
 
 let playerInput
-
-let playerMove
-
-let randomNumber
 
 /**
  * Describe this function...
@@ -59,11 +56,14 @@ function displayResult(argPlayerMove, argComputerMove) {
   printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
 }
 
-playerMove = argButtonName;
-randomNumber = Math.floor(Math.random() * 3 + 1);
+let playerMove = argButtonName;
+
+let randomNumber = Math.floor(Math.random() * 3 + 1);
 console.log('wylosowana liczba to: ' + randomNumber);
-computerMove = getMoveName(randomNumber);
+  
+let computerMove = getMoveName(randomNumber);
 console.log('ruch komputera to: ' + computerMove);
+  
 displayResult(playerMove, computerMove);
 
 }
