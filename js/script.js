@@ -13,10 +13,15 @@ function buttonClicked(argButtonName) {
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
 
-var argComputerMove, argMoveId, argPlayerMove, playerInput, playerMove, randomNumber;
-
+var argComputerMove, argMoveId, argPlayerMove;
 let computerMove
-  
+
+let playerInput
+
+let playerMove
+
+let randomNumber
+
 /**
  * Describe this function...
  */
@@ -39,8 +44,7 @@ function getMoveName(argMoveId) {
  */
 function displayResult(argPlayerMove, argComputerMove) {
   console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
-  printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
-}
+  
   if (argPlayerMove == 'papier' && argComputerMove == 'kamień') {
     printMessage('Wygrywasz!');
   } else if (argPlayerMove == 'kamień' && argComputerMove == 'nożyce') {
@@ -52,7 +56,8 @@ function displayResult(argPlayerMove, argComputerMove) {
   } else {
     printMessage('Przegrywasz :(');
   }
-  
+  printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
+}
 
 playerMove = argButtonName;
 randomNumber = Math.floor(Math.random() * 3 + 1);
